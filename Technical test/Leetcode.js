@@ -10,7 +10,7 @@ const reverse = function(x){
         result = parseInt(String(x).split('').reverse().join(''));
     }
 
-    if(result > Math.pow(2, 31) -1  || result < -Math.pow(2, 31)){
+    if(result > Math.pow(2, 31) -1  || result < -Math.pow(2, 31)){ // maximum and minimum 32-bit can hold
         return 0;
     }
 
@@ -50,6 +50,8 @@ function mostFrequentCharacter(inputStr) {
             frequencyDict[char] = 1;
         }
     }
+
+    console.log(frequencyDict)
     
     // Find the character with the maximum frequency
     let maxFrequency = 0;
@@ -76,11 +78,14 @@ console.log(mostFrequentCharacter(inputNum));
 //   least once. Punctuation and case are typically ignored. For example, the
 //   string "The quick brown fox jumps over the lazy dog" is a pangram, while
 //   "Hello, world!" is not
-const checkIfPangram = function(sentence){
-    return new Set(sentence).size === 26
-}
+const checkIfPangram = function(sentence) {
+    return new Set(sentence.toLowerCase()).size === 26;
+}  
+
+console.log("--------------------------------")
 console.log(checkIfPangram("Emmanuel")) // will say false.
 console.log(checkIfPangram("The quick brown fox jumps over the lazy dog")) // will say true.
+console.log("--------------------------------")
 
 
 

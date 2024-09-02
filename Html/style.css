@@ -1,0 +1,11 @@
+.background{
+    background-color: beige;
+}
+.image-wrapper{
+    width: 100vh;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30%;
+    justify-content: space-between;
+}
