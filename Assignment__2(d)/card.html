@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Challenge</title>
+    <title>E-commerce Challenge</title>
     <link rel="stylesheet" href="card.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
                 </ul>
                 <ul class="account-cart">
                     <li>Account</li>
-                    <li><i class="fa-regular fa-cart-shopping"></i> 3 Items</li>
+                    <li> <i class="fa-solid fa-lock"></i></i> 3 Items</li>
                     <img src="./../Assignment__1/image-qr-code.png" alt="Profile_pc" class="profile-pic">
                 </ul>
             </nav>
@@ -39,18 +39,61 @@
                 <div class="account-details">
                     <h2 style="font-family: Outfit; margin-right: 300px; font-size: 20px;">Account Details</h2>
                     <form >
-                        <label for="" style="margin-right: 325px; font-size: 20px; font-family: Outfit; ">Email address</label><br><br>
-                        <input type="email" id="" style="margin-left: 270px; font-size: 20px; font-family: Outfit;" placeholder="johnDoe@gmail.com"><i class="fa-solid fa-circle-check"></i><br>
+                        <label for="" class="email-label">Email address</label><br><br>
+                        <input type="email" id="" placeholder="johnDoe@gmail.com"><i class="fa-solid fa-circle-check"></i><br>
                         <label for="" style="margin-right: 350px; font-size: 20px; font-family: Outfit; ">Password</label><br><br>
-                        <input type="password" id="" style="margin-left: 270px; font-size: 20px; font-family: Outfit;" > <i class="fa-solid fa-circle-check"></i><br>
+                        <input type="password" id=""  placeholder="********"> <i class="fa-solid fa-circle-check"></i><br>
                     </form>
                     <div class="button-1">
-                        <p>Register for Account</p>
-                        <button class="btn-login">Login</button>
+                        <div class="button-center">
+                            <p>Register for Account</p>
+                        </div>
+                        <div class="button-center">
+                            <button class="btn-login">Login</button>
                     </div>
                 </div>
+                <div class="hr">
+                    <hr style="height: 1px; background-color: grey; border: none; margin-left: 100; width: 600px; margin-top: 40px;">
+                </div>
+                    <div class="button-1">
+                        <div class="button-center">
+                            <p style="margin-right: 70px;">Cancel order</p>
+                        </div>
+                        <div class="button-center">
+                            <button class="btn-login">Shipping details</button>
+                    </div>
             </section>            
-            <section class="side-section"></section>
+            <section class="side-section">
+                <div style="width: 90%; margin: 40px;">
+                    <div class="product-div">
+                        <h3>Order Summary</h3>
+                        <div class="prod-image"><img src="./headphones.png" alt="headphones"></div>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <div style="margin-right: 30px;">
+                            <p style="font-size: 20px;">Sony wireless headphones</p>
+                            <h4 style="font-size: 20px;"><strong>£320.45</strong></h4>
+                        </div>
+                        <div class="quantity">
+                            <button class="negative">−</button>
+                            <span class="amount">1</span>
+                            <button class="positive">+</button>
+                        </div>
+                    </div>
+                    <p style="color: grey;">Gift Card/Discount code</p>
+                    <div class="discount">
+                        <input type="text">
+                        <button style="height:56px ;">Apply</button>
+                    </div>
+    
+                    <div class="summary">
+                        <p>Sub total <span>£316.55</span></p>
+                        <p>Sub total <span>£316.55</span></p>
+                        <p>Sub total <span style="color: rgb(89, 182, 89);">Free</span></p>
+                        <p><strong style="font-size: 20px;">Sub total</strong> <span>£316.55</span></p>
+                    </div>
+                </div>
+            </section>
         </div> 
     </div>
 </body>

@@ -6,7 +6,7 @@ nav {
     background-color: #fff; 
     font-family: Outfit;
 }
-p{
+p, h3{
     font-family: Outfit;
     font-size: 20px;
 }
@@ -50,15 +50,26 @@ p{
     align-items: center;
 }
 
+.account-details{
+    margin-top: 100px;
+    margin-left: -200px;
+}
+
 .fa-cart-shopping {
     margin-right: 5px;
 }
+.email-label {
+    margin-right: 325px;
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
 .sectioning {
     display: flex;
     width: 100%;
     height: 100%; 
-    margin-left: 30px;
     gap: 30px;
+    margin-left: 200px;
 }
 
 .main-section {
@@ -72,19 +83,21 @@ p{
     width: 35%;
     background-color: whitesmoke;
     height: 80vh;
+    border-radius: 15px;
 }
 .main-section {
     text-align: center;
     height: 80vh;
+    width: 40vw;
 }
 
 .progress-list {
     list-style-type: none;
-    padding: 0;
+    padding: 0; 
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .progress-item {
@@ -107,12 +120,134 @@ input{
     color: grey;
     border-style: none;
     background-color:#dce4e8;
+    margin-left: 170px; 
+    font-size: 20px; 
+    font-family: Outfit;
+}
+.button-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 320px;
 }
 .btn-login{
     width: 150px;
-    height: 40px;
-    border-radius: 5px;
+    height: 50px;
+    border-radius: 10px;
     border-style: none;
     background-color: cornflowerblue;
-    color: white
+    color: white;
+    font-family: Outfit;
+}
+.hr{
+    margin-left: 200px;
+}
+.button-center{
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.product{
+    background-color:#F0F8FF;
+    width:25%;
+    border-radius: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px
+}
+
+.prod-image{
+    background-color:pink;
+    height:15vh;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    overflow:hidden;
+    background-color:#e0e0e0;
+    margin-bottom: 10px;
+}
+
+.prod-image img{
+    width:200px;
+    height:200px;
+    margin-top:-50px
+}
+
+.quantity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.negative{
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.amount{
+    font-size: 20px !important;
+    font-weight: bold;
+}
+.positive{
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.quantity-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quantity {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.discount{
+    display:flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.discount input {
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding-right: 5px;
+    color: black;
+    background-color:#e0e0e0;
+    margin-right: 10px;
+}
+
+.discount button {
+    width: 21%;
+    height: 40px;
+    border: 2px solid cornflowerblue;
+    color:cornflowerblue;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.summary{
+    font-size:18px
+}
+
+.summary p{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
